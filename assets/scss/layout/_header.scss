@@ -1,0 +1,8 @@
+@use "header/navbar";
+
+header {
+    overflow: hidden;
+    background-image: url(../img/header-bg.jpg);
+    background-size: contain;
+    height: 100vh;
+}

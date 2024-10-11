@@ -1,0 +1,7 @@
+@use "font";
+@use "../abstract/mixins";
+@use "../abstract/variable" as var;
+
+h2 {
+    text-transform: capitalize;
+}
