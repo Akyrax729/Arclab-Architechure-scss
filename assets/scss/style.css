@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 5%;
+}
+header nav img {
+  height: 40px;
+}
+header nav h1 {
+  position: absolute;
+  opacity: 0.2;
+  color: white;
+  font-size: 180px;
+  transform: rotate(-90deg);
+  left: 100px;
+  top: 250px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header nav ul li {
+  padding: 1rem 2.5vw;
+}
+header nav ul li a {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+header nav ul li a:hover {
+  color: #BA9570;
+}
+header nav ul li:first-child a {
+  color: #BA9570;
+}
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  color: white;
+  margin-top: 10rem;
+  margin-left: 5%;
+}
+#banner p {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+#banner h2 {
+  font-size: 160px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+#banner span {
+  display: block;
+}
+#banner .btn {
+  color: white;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#banner .btn:hover {
+  color: #BA9570;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#banner ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+#banner ul a {
+  padding-right: 2rem;
+  font-size: 24px;
+  color: white;
+}
+
+header {
+  overflow: hidden;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#header {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

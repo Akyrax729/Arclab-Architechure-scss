@@ -1,0 +1,45 @@
+@use "../../abstract/mixins";
+@use "../../abstract/variable" as var;
+
+header nav {
+    @include mixins.flex ($flexdirection:row, $justifycontent: space-between);
+    align-items: center;
+    // position: relative;
+    margin: 0 5%;
+    
+    img {
+        height: 40px;
+    }
+    h1 {
+        position: absolute;
+        opacity: 0.2;
+        color: white;
+        font-size: 180px;
+        transform: rotate(-90deg);
+        left: 100px;
+        top: 250px;
+        user-select: none; 
+    }
+    ul {
+        @include mixins.flex ($flexdirection:row);
+        
+        li {
+            padding: 1rem 2.5vw;
+
+            a {
+                color: white;
+                font-size: 25px;
+                text-transform: uppercase;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: var.$primarycolor;
+                }
+            }
+            &:first-child a{
+                color: var.$primarycolor;
+            }
+            
+        }
+    }
+}

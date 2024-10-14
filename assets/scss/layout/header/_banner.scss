@@ -1,0 +1,38 @@
+@use "../../abstract/mixins";
+@use "../../abstract/variable" as var;
+
+#banner {
+    @include mixins.flex ($justifycontent:flex-start, $alignitems:flex-start);
+    color: white;
+    margin-top: 10rem;
+    margin-left: 5%;
+
+    p {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+    h2 {
+        font-size: 160px;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+    span {
+        display: block;
+    }
+    .btn {
+        @include mixins.button;
+        @include mixins.flex;
+    }
+    ul {
+        @include mixins.flex ($flexdirection:row, $justifycontent:space-between);
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+
+        a {
+            padding-right:2rem;
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
